@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--权限申请弹出框-->
+    <style name="PermissionDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the background -->
+        <item name="android:background">@android:color/white</item>
+    </style>
+</resources>

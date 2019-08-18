@@ -1,0 +1,1 @@
+include ':app', ':map.main', ':map.bai.du', ':map.gao.de', ':map.tencent', ':map.base', ':permission', ':json.convert', ':okhttp.manage'

@@ -1,0 +1,4 @@
+<resources>
+    <!--bar 文字大小-->
+    <dimen name="map_base_bar_size">16sp</dimen>
+</resources>

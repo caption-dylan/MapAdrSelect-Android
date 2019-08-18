@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">map.select</string>
+
+    <string name="back_name">返回</string>
+
+    <string name="title">重置位置</string>
+
+    <string name="confirm">确认</string>
+</resources>

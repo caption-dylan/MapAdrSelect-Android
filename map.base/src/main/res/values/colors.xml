@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主背景颜色-->
+    <color name="map_base_main_bg">#ededed</color>
+    <!--返回文字颜色-->
+    <color name="map_base_bar_return">#1d1d1d</color>
+    <!--标题颜色-->
+    <color name="map_base_bar_title">#1d1d1d</color>
+    <!--确认按钮文字颜色-->
+    <color name="map_base_bar_confirm">@android:color/white</color>
+
+    <!--搜索输入框文字-->
+    <color name="map_main_bar_search">#1d1d1d</color>
+    <!--搜索输入框提示文字-->
+    <color name="map_main_bar_search_hint">#BBB7B7</color>
+</resources>

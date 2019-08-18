@@ -1,0 +1,7 @@
+<resources>
+    <!--申请权限-->
+    <string name="permission_dialog_title">权限申请</string>
+    <string name="permission_dialog_setting">设置</string>
+    <string name="permission_dialog_cancel">取消</string>
+    <string name="permission_dialog_content">当前应用缺少[%s]权限。\n\n请点击"设置"-"权限"-打开所需要权限。\n\n最后点击后退按钮,进行返回。</string>
+</resources>

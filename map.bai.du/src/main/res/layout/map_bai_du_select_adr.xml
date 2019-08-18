@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map_bai_du"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:id="@+id/iv_back_current"
+            android:layout_width="@dimen/map_base_move_location_size"
+            android:layout_height="@dimen/map_base_move_location_size"
+            android:src="@mipmap/map_base_location"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="@dimen/map_base_back_location_right"
+            android:layout_marginBottom="@dimen/map_base_back_location_bottom"/>
+        <ImageView
+            android:id="@+id/iv_move_select"
+            android:layout_width="@dimen/map_base_back_location_size"
+            android:layout_height="@dimen/map_base_back_location_size"
+            android:src="@mipmap/map_base_location_select"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/map_base_move_location_bottom"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_adr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">map.main</string>
+
+    <!--返回文字-->
+    <string name="map_main_bar_return">取消</string>
+    <!--标题-->
+    <string name="map_main_bar_title">位置</string>
+    <!--确认按钮文字-->
+    <string name="map_main_bar_confirm">完成</string>
+
+    <!--搜索输入框提示文字-->
+    <string name="map_main_bar_search_hint">搜索地址</string>
+</resources>

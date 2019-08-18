@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/map_base_main_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/map_base_bar_height"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="@dimen/map_base_bar_height"
+            android:layout_height="match_parent"
+            android:padding="@dimen/map_base_search_back_padding"
+            android:src="@mipmap/map_main_return"/>
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingStart="@dimen/map_base_bar_lr"
+            android:paddingEnd="@dimen/map_base_bar_lr"
+            android:textColorHint="@color/map_main_bar_search_hint"
+            android:textColor="@color/map_main_bar_search"
+            android:hint="@string/map_main_bar_search_hint"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"/>
+</LinearLayout>
