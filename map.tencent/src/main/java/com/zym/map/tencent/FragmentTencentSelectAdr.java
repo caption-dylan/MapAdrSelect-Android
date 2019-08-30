@@ -187,6 +187,8 @@ public class FragmentTencentSelectAdr extends MapBaseFragment implements Tencent
         }
         if(request == null){
             request = TencentLocationRequest.create();
+            //每30秒定位一次
+            request.setInterval(30 * 1000);
             request.setRequestLevel(TencentLocationRequest.REQUEST_LEVEL_ADMIN_AREA);
         }
         if(locationManager == null){
@@ -296,6 +298,7 @@ public class FragmentTencentSelectAdr extends MapBaseFragment implements Tencent
             // 定位成功
             if(tencentLocation != null){
                 Log.v("com.zym.map.tencent", "定位成功！");
+                Log.v("定位成功结果", tencentLocation.toString());
                 //获取当前定位到的城市
                 locationCity = tencentLocation.getCity();
                 if(!initStatus){

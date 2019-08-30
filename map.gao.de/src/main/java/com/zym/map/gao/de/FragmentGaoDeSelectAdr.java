@@ -139,7 +139,7 @@ public class FragmentGaoDeSelectAdr extends MapBaseFragment implements View.OnCl
         sb.append(String.format(Locale.CANADA, "?location=%f,%f", selectLatLng.latitude, selectLatLng.longitude));
         sb.append(String.format(Locale.CANADA,"&offset=%d", IMapConfig.PAGE_SIZE));
         sb.append(String.format(Locale.CANADA,"&page=%d", pageIndex));
-        sb.append("&types=010000|020000|030000|040000|050000|060000|070000|080000|090000|100000|110000|120000");
+        sb.append("&types=050000|070000|120000");
         sb.append(String.format(Locale.CANADA, "&key=%s", ConfigUtils.getMetaData(getContext(), "com.amap.api.apikey.web")));
         HttpRequest.get(sb.toString(), new HttpRequestCallback() {
             @Override
@@ -217,7 +217,7 @@ public class FragmentGaoDeSelectAdr extends MapBaseFragment implements View.OnCl
             //设置定位模式为高精度模式，Battery_Saving为低功耗模式，Device_Sensors是仅设备模式
             mLocationOption.setLocationMode(AMapLocationClientOption.AMapLocationMode.Hight_Accuracy);
             //设置定位间隔,单位毫秒,默认为2000ms
-            mLocationOption.setInterval(2000);
+            mLocationOption.setInterval(30 * 1000);
             // 此方法为每隔固定时间会发起一次定位请求，为了减少电量消耗或网络流量消耗，
             // 注意设置合适的定位时间的间隔（最小间隔支持为1000ms），并且在合适时间调用stopLocation()方法来取消定位请求
             // 在定位结束后，在合适的生命周期调用onDestroy()方法
