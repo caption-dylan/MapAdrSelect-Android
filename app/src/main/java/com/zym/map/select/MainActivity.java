@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             //intent.putExtra(ActivityMapMainIndex.KEY_CUSTOMIZE_UI, customize);
 
             startActivityForResult(intent, ActivityMapMainIndex.KEY_REQUEST_CODE);
+            overridePendingTransition(R.anim.slide_bottom_in, 0);
         });
         tvResult = findViewById(R.id.tv_result);
     }

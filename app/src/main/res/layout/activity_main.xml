@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
 
     <Button
@@ -36,5 +37,6 @@
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="175dp"
         tools:layout_editor_absoluteY="293dp"
+        android:textColor="@android:color/black"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

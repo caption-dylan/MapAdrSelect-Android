@@ -214,4 +214,10 @@ public class ActivityMapMainIndex extends MapBaseActivity {
         ft.show(fmMain);
         ft.commit();
     }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(0, R.anim.slide_bottom_out);
+    }
 }
